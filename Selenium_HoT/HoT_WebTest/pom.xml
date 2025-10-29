@@ -1,0 +1,107 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.example</groupId>
+  <artifactId>HoT_WebTest</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <name>HoT_WebTest</name>
+  <url>http://www.example.com</url>
+
+  <properties>
+    <!-- 1. CORRECT: Use JDK 18 as defined by the user -->
+    <maven.compiler.source>18</maven.compiler.source>
+    <maven.compiler.target>18</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+
+    <!-- 2. ADDED: Required Selenium dependency for browser interaction -->
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>4.15.0</version>
+    </dependency>
+
+    <!-- 3. FIXED: Extent Reports (User requested version 3.1.2) -->
+    <dependency>
+      <groupId>com.aventstack</groupId>
+      <artifactId>extentreports</artifactId>
+      <version>3.1.2</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- 4. FIXED: Using the specific JUnit 5 API and stable version -->
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <version>5.10.1</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- 5. ADDED: JUnit 5 Engine is needed to run the tests -->
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <version>5.10.1</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- REMOVED ISSUES: The following dependencies were removed due to conflicts:
+        - junit:junit:4.11 (JUnit 4)
+        - junit:junit:3.8.1 (JUnit 3)
+        - org.junit.jupiter:junit-jupiter:RELEASE (Unstable version, replaced with fixed API and Engine)
+    -->
+
+  </dependencies>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <!-- The version definitions for other plugins were kept the same -->
+        <plugin>
+          <artifactId>maven-clean-plugin</artifactId>
+          <version>3.0.0</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>3.0.2</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.7.0</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>2.20.1</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>3.0.2</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-install-plugin</artifactId>
+          <version>2.5.2</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-deploy-plugin</artifactId>
+          <version>2.8.2</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+
+    <plugins>
+      <!-- CRITICAL FIX: Removed the conflicting <configuration> section below that was forcing Java 8.
+           The compiler now correctly uses Java 18 settings from the <properties> section. -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <!-- Configuration is intentionally left empty to use <properties> -->
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
