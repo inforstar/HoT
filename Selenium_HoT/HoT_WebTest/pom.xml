@@ -48,6 +48,18 @@
       <version>5.10.1</version>
       <scope>test</scope>
     </dependency>
+      <dependency>
+          <groupId>com.aventstack</groupId>
+          <artifactId>extentreports</artifactId>
+          <version>3.1.2</version>
+          <scope>compile</scope>
+      </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <version>5.10.1</version>
+      <scope>compile</scope>
+    </dependency>
 
     <!-- REMOVED ISSUES: The following dependencies were removed due to conflicts:
         - junit:junit:4.11 (JUnit 4)

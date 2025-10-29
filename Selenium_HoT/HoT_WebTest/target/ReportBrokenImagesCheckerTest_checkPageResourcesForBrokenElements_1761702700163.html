@@ -46,7 +46,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Oct 29, 2025 02:23:16 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Oct 29, 2025 02:51:40 AM</span>
 				</a>
 			</li>
 			<li>
@@ -72,7 +72,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -123,10 +122,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -138,10 +137,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='8.333%'><span class='strong'>1</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='25%'><span class='strong'>3</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='16.667%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='75%'>9</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='75%'>9</span> others
 				</div>
 			</div>
 		</div>
@@ -156,17 +155,17 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>BrokenResourceTest - BrokenImagesCheckerTest</span>
-						<span class='test-time'>Oct 29, 2025 02:23:16 AM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Oct 29, 2025 02:51:40 AM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 29, 2025 02:23:16 AM</span>
-	<span class='label end-time'>Oct 29, 2025 02:23:33 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 16s+784ms</span>
+	<span class='label start-time'>Oct 29, 2025 02:51:40 AM</span>
+	<span class='label end-time'>Oct 29, 2025 02:52:18 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 37s+837ms</span>
 </div>
 	<div class='test-desc'>Checks for broken links and images on the target page. </div>
 	<div class='test-steps'>
@@ -181,513 +180,518 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>2:23:16 AM</td>
+					<td class='timestamp'>2:51:40 AM</td>
 					<td class='step-details'>Starting test setup...</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>2:23:17 AM</td>
+					<td class='timestamp'>2:51:41 AM</td>
 					<td class='step-details'>WebDriver initialized successfully.</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>2:23:17 AM</td>
+					<td class='timestamp'>2:51:41 AM</td>
 					<td class='step-details'>Navigating to: https://houseoftest.ch/our-team</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>2:23:19 AM</td>
+					<td class='timestamp'>2:51:43 AM</td>
 					<td class='step-details'>Successfully navigated to target URL: <a href='https://houseoftest.ch/our-team'>https://houseoftest.ch/our-team</a></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:51:43 AM</td>
+					<td class='step-details'>Clicked: By.xpath: //div[@class='cookie-modal_button_text']</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>--- Link Collection Started ---</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>Found 53 total links.</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>1. Link Href: https://www.houseoftest.ch/our-team#</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>2. Link Href: https://www.houseoftest.ch/our-team#</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>3. Link Href: https://www.houseoftest.ch/privacy-policy</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>4. Link Href: https://www.houseoftest.ch/our-team#</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>5. Link Href: https://www.houseoftest.ch/our-team#</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>6. Link Href: https://www.houseoftest.ch/our-team#</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>7. Link Href: https://www.houseoftest.ch/our-team#</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>8. Link Href: https://www.houseoftest.ch/</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>9. Link Href: https://www.houseoftest.ch/our-services</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>10. Link Href: https://www.houseoftest.ch/courses-and-workshops</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>11. Link Href: https://www.houseoftest.ch/insights</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>12. Link Href: https://www.houseoftest.ch/courses-events/our-courses</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>13. Link Href: https://www.houseoftest.ch/courses-events/why-our-courses</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>14. Link Href: https://www.houseoftest.ch/courses-events/instructors</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>15. Link Href: https://www.houseoftest.ch/links-and-self-studies</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>16. Link Href: https://www.houseoftest.ch/about-us</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>17. Link Href: https://www.houseoftest.ch/about-us</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>18. Link Href: https://www.houseoftest.ch/join-us</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>19. Link Href: https://www.houseoftest.ch/our-team</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>20. Link Href: https://www.houseoftest.ch/about-us</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>21. Link Href: https://www.houseoftest.ch/contact</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>22. Link Href: https://www.houseoftest.ch/contact</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>23. Link Href: https://www.houseoftest.ch/our-team</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>24. Link Href: https://www.houseoftest.ch/de/our-team</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>25. Link Href: https://www.houseoftest.ch/our-team</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>26. Link Href: https://www.houseoftest.ch/de/our-team</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>27. Link Href: https://www.linkedin.com/in/alexandre-bauduin/</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>28. Link Href: https://www.linkedin.com/in/r-andrei/</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>29. Link Href: https://www.linkedin.com/in/andyorange/</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>30. Link Href: https://www.linkedin.com/in/daniel-w%C3%A4lti-465a7a102/</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>31. Link Href: https://www.linkedin.com/in/florian-sommerfeldt-0a394a296/</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>32. Link Href: https://www.linkedin.com/in/ilarihenrikaegerter/</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>33. Link Href: https://www.linkedin.com/in/iv%C3%A1nriera/</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>34. Link Href: https://www.linkedin.com/in/jan-d-wegner/</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>35. Link Href: https://www.linkedin.com/in/johannany/</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>36. Link Href: https://www.linkedin.com/in/marko-cagalinec/</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>37. Link Href: https://www.linkedin.com/in/1337tester/</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>38. Link Href: https://www.linkedin.com/in/natalia-szprega-809464115/</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>39. Link Href: https://www.linkedin.com/in/nikola-ristic-b3723b200/</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>40. Link Href: https://www.linkedin.com/in/olga-dietiker-16b456b2/</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>41. Link Href: https://www.linkedin.com/in/peter-freyre-9b62306/</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>42. Link Href: https://www.linkedin.com/in/simonberner/</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>43. Link Href: https://www.linkedin.com/in/simon-reichenbach-8a147283/</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>44. Link Href: https://www.houseoftest.ch/our-services</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>45. Link Href: https://www.houseoftest.ch/links-and-self-studies</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>46. Link Href: https://www.houseoftest.ch/our-team</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>47. Link Href: https://www.houseoftest.ch/mediakit</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>48. Link Href: https://www.houseoftest.ch/contact</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>49. Link Href: https://www.houseoftest.ch/about-us</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>50. Link Href: https://www.houseoftest.ch/join-us</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>51. Link Href: https://www.houseoftest.ch/privacy-policy</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>52. Link Href: https://mailchi.mp/2d5e45b6f222/contact-form</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>53. Link Href: https://www.linkedin.com/company/house-of-test-gmbh/</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>Link collection complete. Total valid hrefs logged.</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>--- Broken Image Check Started ---</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>Found 38 total images to check.</td>
-				</tr>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
-					<td class='step-details'>BROKEN IMAGE DETECTED !!! -> SRC: https://cdn.prod.website-files.com/64672e91763a265715e8493f/64672e91763a265715e849cd_ck__cookie.svg</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
+					<td class='step-details'>Image Loaded Successfully -> SRC: https://cdn.prod.website-files.com/64672e91763a265715e8493f/64672e91763a265715e849cd_ck__cookie.svg</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>Image Loaded Successfully -> SRC: https://cdn.prod.website-files.com/64672e91763a265715e8493f/67f76e3181733b7f9bb623b5_Logga-white.svg</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>Image Loaded Successfully -> SRC: https://cdn.prod.website-files.com/64672e91763a265715e84942/64919645d2bd3b275735d05a_DSC01590.webp</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>Image Loaded Successfully -> SRC: https://cdn.prod.website-files.com/64672e91763a265715e8493f/64672e91763a265715e849a9_LinkedIn%20Icon.svg</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>Image Loaded Successfully -> SRC: https://cdn.prod.website-files.com/64672e91763a265715e84942/64919340fbb3a410da5b0d4a_DSC01563.webp</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>Image Loaded Successfully -> SRC: https://cdn.prod.website-files.com/64672e91763a265715e8493f/64672e91763a265715e849a9_LinkedIn%20Icon.svg</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>Image Loaded Successfully -> SRC: https://cdn.prod.website-files.com/64672e91763a265715e84942/649196b2f61fd5730be16428_DSC01631.webp</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>Image Loaded Successfully -> SRC: https://cdn.prod.website-files.com/64672e91763a265715e8493f/64672e91763a265715e849a9_LinkedIn%20Icon.svg</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>Image Loaded Successfully -> SRC: https://cdn.prod.website-files.com/64672e91763a265715e84942/662f383e9aa0953e5287792a_Daniel-w-background.webp</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>Image Loaded Successfully -> SRC: https://cdn.prod.website-files.com/64672e91763a265715e8493f/64672e91763a265715e849a9_LinkedIn%20Icon.svg</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>Image Loaded Successfully -> SRC: https://cdn.prod.website-files.com/64672e91763a265715e84942/65dd8d400df120526a47455a_Florian.webp</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>Image Loaded Successfully -> SRC: https://cdn.prod.website-files.com/64672e91763a265715e8493f/64672e91763a265715e849a9_LinkedIn%20Icon.svg</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>Image Loaded Successfully -> SRC: https://cdn.prod.website-files.com/64672e91763a265715e84942/649197a08de7675a48261f85_DSC01576.webp</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>Image Loaded Successfully -> SRC: https://cdn.prod.website-files.com/64672e91763a265715e8493f/64672e91763a265715e849a9_LinkedIn%20Icon.svg</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>Image Loaded Successfully -> SRC: https://cdn.prod.website-files.com/64672e91763a265715e84942/6491969ad2bd3b27573616e0_DSC01695.webp</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>Image Loaded Successfully -> SRC: https://cdn.prod.website-files.com/64672e91763a265715e8493f/64672e91763a265715e849a9_LinkedIn%20Icon.svg</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>Image Loaded Successfully -> SRC: https://cdn.prod.website-files.com/64672e91763a265715e84942/649196bac1eb2dea694644b6_DSC01871.webp</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>Image Loaded Successfully -> SRC: https://cdn.prod.website-files.com/64672e91763a265715e8493f/64672e91763a265715e849a9_LinkedIn%20Icon.svg</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>Image Loaded Successfully -> SRC: https://cdn.prod.website-files.com/64672e91763a265715e84942/64aba1d9752f2e9019e8d4fe_Johanna_swiss_small.webp</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>Image Loaded Successfully -> SRC: https://cdn.prod.website-files.com/64672e91763a265715e8493f/64672e91763a265715e849a9_LinkedIn%20Icon.svg</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>Image Loaded Successfully -> SRC: https://cdn.prod.website-files.com/64672e91763a265715e84942/683d72a207155a7d60e594f9_Marko_3.webp</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:32 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>Image Loaded Successfully -> SRC: https://cdn.prod.website-files.com/64672e91763a265715e8493f/64672e91763a265715e849a9_LinkedIn%20Icon.svg</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:33 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>Image Loaded Successfully -> SRC: https://cdn.prod.website-files.com/64672e91763a265715e84942/67e14b4fbc2a3f92a27e6cb6_Michal%20Zima.webp</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:33 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>Image Loaded Successfully -> SRC: https://cdn.prod.website-files.com/64672e91763a265715e8493f/64672e91763a265715e849a9_LinkedIn%20Icon.svg</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:33 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>Image Loaded Successfully -> SRC: https://cdn.prod.website-files.com/64672e91763a265715e84942/64919673f61fd5730be126ce_DSC01775.webp</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:33 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>Image Loaded Successfully -> SRC: https://cdn.prod.website-files.com/64672e91763a265715e8493f/64672e91763a265715e849a9_LinkedIn%20Icon.svg</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:33 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>Image Loaded Successfully -> SRC: https://cdn.prod.website-files.com/64672e91763a265715e84942/662f382065fd8274adfcc901_Nikola-w-background.webp</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:33 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>Image Loaded Successfully -> SRC: https://cdn.prod.website-files.com/64672e91763a265715e8493f/64672e91763a265715e849a9_LinkedIn%20Icon.svg</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:33 AM</td>
+					<td class='timestamp'>2:52:17 AM</td>
 					<td class='step-details'>Image Loaded Successfully -> SRC: https://cdn.prod.website-files.com/64672e91763a265715e84942/6491967e8de7675a4824ed2a_DSC01706.webp</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:33 AM</td>
+					<td class='timestamp'>2:52:18 AM</td>
 					<td class='step-details'>Image Loaded Successfully -> SRC: https://cdn.prod.website-files.com/64672e91763a265715e8493f/64672e91763a265715e849a9_LinkedIn%20Icon.svg</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:33 AM</td>
+					<td class='timestamp'>2:52:18 AM</td>
 					<td class='step-details'>Image Loaded Successfully -> SRC: https://cdn.prod.website-files.com/64672e91763a265715e84942/68ff39c75dcdc8778519f633_Peter-F.webp</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:33 AM</td>
+					<td class='timestamp'>2:52:18 AM</td>
 					<td class='step-details'>Image Loaded Successfully -> SRC: https://cdn.prod.website-files.com/64672e91763a265715e8493f/64672e91763a265715e849a9_LinkedIn%20Icon.svg</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:33 AM</td>
+					<td class='timestamp'>2:52:18 AM</td>
 					<td class='step-details'>Image Loaded Successfully -> SRC: https://cdn.prod.website-files.com/64672e91763a265715e84942/649196c4270212395ec0e139_DSC01796.webp</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:33 AM</td>
+					<td class='timestamp'>2:52:18 AM</td>
 					<td class='step-details'>Image Loaded Successfully -> SRC: https://cdn.prod.website-files.com/64672e91763a265715e8493f/64672e91763a265715e849a9_LinkedIn%20Icon.svg</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:33 AM</td>
+					<td class='timestamp'>2:52:18 AM</td>
 					<td class='step-details'>Image Loaded Successfully -> SRC: https://cdn.prod.website-files.com/64672e91763a265715e84942/64992abccb184bafc7a77668_DSC01844.webp</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:33 AM</td>
+					<td class='timestamp'>2:52:18 AM</td>
 					<td class='step-details'>Image Loaded Successfully -> SRC: https://cdn.prod.website-files.com/64672e91763a265715e8493f/64672e91763a265715e849a9_LinkedIn%20Icon.svg</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:33 AM</td>
+					<td class='timestamp'>2:52:18 AM</td>
 					<td class='step-details'>Image Loaded Successfully -> SRC: https://cdn.prod.website-files.com/64672e91763a265715e8493f/680a3e5aa4124c757ac72972_HOT-Logo_White.png</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:23:33 AM</td>
+					<td class='timestamp'>2:52:18 AM</td>
 					<td class='step-details'>Image Loaded Successfully -> SRC: https://cdn.prod.website-files.com/64672e91763a265715e8493f/64672e91763a265715e849a1_Linkedin.svg</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>2:23:33 AM</td>
-					<td class='step-details'>Summary: 1 broken images found.</td>
+					<td class='timestamp'>2:52:18 AM</td>
+					<td class='step-details'>Summary: 0 broken images found.</td>
 				</tr>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>2:23:33 AM</td>
-					<td class='step-details'>1 broken image(s) found on the page. Test FAILED.</td>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:52:18 AM</td>
+					<td class='step-details'>No broken images detected. Page quality is good. Test PASSED.</td>
 				</tr>
 			</tbody>
 		</table>
@@ -741,19 +745,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Oct 29, 2025 02:23:16 AM</div>
+					<div class='panel-lead'>Oct 29, 2025 02:51:40 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Oct 29, 2025 02:23:33 AM</div>
+			 		<div class='panel-lead'>Oct 29, 2025 02:52:18 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>16,929ms</div>
+					<div class='panel-lead'>37,983ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -786,22 +790,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 0,
-				failParent: 1,
+				passParent: 1,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				exceptionsParent: 0,
 				
-				passChild: 1,
-				failChild: 2,
+				passChild: 3,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 9,
-				exceptionsChild: 92,
+				exceptionsChild: 91,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

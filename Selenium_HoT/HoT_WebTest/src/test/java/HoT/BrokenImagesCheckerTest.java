@@ -1,80 +1,20 @@
 package HoT;
 
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
+import helpers.ClosePopups;
+import helpers.ScrollingUtils;
+import helpers.TestFrame;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 
-
+import java.time.Duration;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 import static org.junit.jupiter.api.Assertions.fail;
 
-public class BrokenImagesCheckerTest {
-
-    private WebDriver driver;
-    private final String TEST_URL = "https://houseoftest.ch/";
-
-    // NEW EXTENT REPORTS VARIABLES
-    private ExtentReports extent;
-    private ExtentTest test;
-
-    /**
-     * Setup method to initialize the WebDriver AND Extent Reports before each test.
-     */
-    @BeforeEach
-    public void setUp() {
-        // --- 1. Extent Reports Initialization (Done once) ---
-        if (extent == null) {
-            // Specify file path for the report
-            ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter("target/ExtentReport.html");
-            extent = new ExtentReports();
-            extent.attachReporter(htmlReporter);
-            extent.setSystemInfo("Tester", "Automated QA");
-            extent.setSystemInfo("OS", System.getProperty("os.name"));
-        }
-
-        // --- 2. Create Test Entry in Report ---
-        test = extent.createTest("BrokenResourceTest - " + getClass().getSimpleName(),
-                "Checks for broken links and images on the target page.");
-        test.log(Status.INFO, "Starting test setup...");
-
-
-        // --- 3. WebDriver Initialization ---
-        // Selenium 4 automatically handles the driver executable (e.g., Chromedriver)
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--start-maximized");
-
-        driver = new ChromeDriver(options);
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        test.log(Status.INFO, "WebDriver initialized successfully.");
-    }
-
-    /**
-     * Teardown method to close the browser and flush the report after each test.
-     */
-    @AfterEach
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
-        // --- Flush the Report to write all logs to the HTML file ---
-        if (extent != null) {
-            extent.flush();
-        }
-    }
-
-    // --- Main Test Method ---
+public class BrokenImagesCheckerTest extends TestFrame {
 
     @Test
     void checkPageResourcesForBrokenElements() {
@@ -82,12 +22,18 @@ public class BrokenImagesCheckerTest {
         driver.get(TEST_URL);
         test.log(Status.PASS, "Successfully navigated to target URL: <a href='" + TEST_URL + "'>" + TEST_URL + "</a>");
 
+        ClosePopups.ClosePopups(driver, Duration.ofSeconds(30));
+
+        ScrollingUtils.scrollDownIncrementally(driver,3);
+        ScrollingUtils.scrollToTop(driver);
+
         // 1. Collect and log all links
         collectAndLogLinks();
 
         // 2. Check for broken images
         checkBrokenImages();
     }
+
 
     // --- Helper Method 1: Link Collection (Logging Updated) ---
 
